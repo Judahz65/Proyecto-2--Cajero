@@ -1,0 +1,136 @@
+:root{
+    background: rgba(39,81,101,255);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                    
+    justify-content: center;
+    height: 100vh;
+}
+.saldo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    width: 550px;
+}
+
+.saldo div{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+#saldoT{
+    color: whitesmoke;
+    padding-left: 5rem;
+    border-style: none;
+    background: rgba(39,81,101,255);
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ul li a{
+    color: whitesmoke;
+}
+ul li a:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+ul li:hover p{
+    transform: scale(1.5);
+    opacity: 1;
+}
+i:hover{
+    transform: scale(1.5);
+}
+.menuSelector{
+    width: 550px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menuSelector a{
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 60px;
+}
+
+.menuSelector a:hover {
+    transform: scale(1.2);
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+.gastos{
+    width: 550px;
+}
+.gastos p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+}
+.lema{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.lista a, .lista p{
+    color: black;
+    opacity: 0.5;
+}
+.item{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-bottom: 1px solid #dedede;
+}
+.final{
+    border-radius: 0 0 5px 5px;
+}
+.inicio{
+    border-radius: 5px 5px 0px 0px;
+}
+#funcion{
+    display: none;
+    padding-bottom: 1rem;
+}
+#detalles{
+    position: fixed;
+    margin-left: 1200px;
+    margin-bottom: 800px;
+}
+#detalles:hover >.oculto{
+    display: block;
+}
+.oculto{
+    display: none;
+}
+#cantidadR{
+    margin-bottom: 1rem;
+}

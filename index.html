@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Cajero</title>
+</head>
+<body>
+    <header class="cinta">
+        <h1>Navy Bank</h1>
+    </header>
+    <!-- <form action="">
+        <label for="userName">Identificacion del usuario:</label>
+        <input type="text" name="nameUser">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contra">
+        <input type="button" value="Ingresar" onclick="ingresar(this.form)">
+    </form> -->
+    <div id="detalles">
+      <input type="button" class="btn btn-primary"  value="Detalles del usuario">
+      <p class="oculto">Usuario- Juan <br>Contraseña- 1234</p>
+    </div>
+    
+    <form>
+        <div class="mb-3 cinta">
+          <label for="inputUser" class="form-label">Identificacion del usuario: </label>
+          <input type="text" class="form-control" id="inputUser">
+          <div id="user" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="inputPassword" class="form-label">Contraseña: </label>
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <input type="button" class="btn btn-primary" onclick= "ingresar(this.form)" value="Verificar">
+      </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
