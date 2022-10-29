@@ -3,9 +3,54 @@
 }
 
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+/* HEADER PANEL DE ENTRADA*/
+.cabeza{
+height: 7vh;
+position: fixed;
+top: 0;
+background-color: rgba(39,81,101,255);
+width: 100%;
+}
+.myHead{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    height: 100%;
+}
+.boton{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgba(39,81,101,255);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.boton:hover{
+    opacity: 0.9;
+}
+
+/* HEADER CONTENIDO */
+.cabConten{
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: rgba(39,81,101,255);
+}
+.headConten{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.7rem;
+}
+.centro{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;   
 }
 
 body{
@@ -54,7 +99,7 @@ ul li a{
 }
 ul li a:hover{
     opacity: 1;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 ul li:hover p{
     transform: scale(1.5);
@@ -63,6 +108,8 @@ ul li:hover p{
 i:hover{
     transform: scale(1.5);
 }
+
+/* MENU SELECTOR */
 .menuSelector{
     width: 550px;
     display: flex;
@@ -123,7 +170,6 @@ i:hover{
 #detalles{
     position: fixed;
     margin-left: 1200px;
-    margin-bottom: 800px;
 }
 #detalles:hover >.oculto{
     display: block;
@@ -133,4 +179,26 @@ i:hover{
 }
 #cantidadR{
     margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.footer{
+    height: 3vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: whitesmoke;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    color:  rgba(39,81,101,255);
+}
+.pie a{
+    all: unset;
+    justify-items: center;
+    margin-left: 0.5rem;
+    cursor: pointer;
 }
